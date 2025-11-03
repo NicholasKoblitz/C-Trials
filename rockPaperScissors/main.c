@@ -22,7 +22,8 @@ int main(void) {
 		");
 		scanf("%d", &choice);
 		
-		int rand = rand() % (3 - 1 + 1) + 1;
+		srand(time(NULL)
+		int rand = (rand() % 3) + 1;
 		
 		play(choice, rand);
 			
