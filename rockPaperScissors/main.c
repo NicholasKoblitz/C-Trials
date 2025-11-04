@@ -9,15 +9,30 @@ int main(void) {
 	scanf("%d", &players);
 	
 	while(isPlaying == 0) {
-		int choice;
+		if(players == 1) {
+			int choice;
+			printf("\n\nSelect one option:\n1 - Rock\n2 - Paper\n3 - Scissors\n");
+			scanf("%d", &choice);
+			CLEAR;
+			srand(time(NULL));
+			int input = (rand() % 3) + 1;
 
-		printf("Select one option:\n1 - Rock\n2 - Paper\n3 - Scissors\n");
-		scanf("%d", &choice);
-		CLEAR;
-		srand(time(NULL));
-		int input = (rand() % 3) + 1;
+			play(choice, input);
+		}
+		else if(players == 2) {
+			int player1;
+			int player2;
 
-		play(choice, input);
+			printf("Player 1 select one option:\n1 - Rock\n2 - Paper\n3 - Scissors\n");
+			scanf("%d", &player1);
+			CLEAR;
+			printf("Player 2 select one option:\n1 - Rock\n2 - Paper\n3 - Scissors\n");
+			scanf("%d", &player2);
+			CLEAR;
+
+			play(player1,player2);
+		}
+		
 			
 	}
 	

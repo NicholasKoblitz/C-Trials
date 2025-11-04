@@ -54,6 +54,7 @@ const char* scissors(int input) {
 
 
 const char* play(int input, int enemy) {
+	CLEAR;
 	switch(input) {
 		case 1:
 			printf("\n %s\n", rock(enemy));
