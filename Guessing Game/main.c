@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 int main(void) {
 
@@ -13,7 +14,7 @@ int main(void) {
 		char again;
 		int playAgain = 0;
 		
-		srand(NULL);
+		srand(time(NULL));
 		int wizNum = (rand() % 100) + 1;
 		
 		
@@ -28,17 +29,17 @@ int main(void) {
 				
 				if(again == 'n'){
 					isPlaying = 1;
-					break;
+					playAgain = 1;
 				}
 				else {
-					break;
+					playAgain = 1;
 				}
 			}
 			else if(choice < wizNum) {
-				printf("\n\nYou picked too low!\n\n")
+				printf("\n\nYou picked too low!\n\n");
 			}
 			else if(choice > wizNum) {
-				printf("\n\nYou picked too high!\n\n")
+				printf("\n\nYou picked too high!\n\n");
 			}
 		}	
 	}
