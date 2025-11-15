@@ -1,4 +1,7 @@
-#define MAX_SIZE 256;
+#pragma once
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX_SIZE 256
 
 typedef struct {
 	int arr[MAX_SIZE];
@@ -7,7 +10,7 @@ typedef struct {
 
 
 void init(Stack *stack) {
-	stack -> -1;
+	stack -> top = -1;
 }
 
 void push(Stack *stack, int value) {
@@ -19,5 +22,5 @@ void push(Stack *stack, int value) {
 }
 
 void pop(Stack *stack) {
-	stack -> arr[(stack -> top)--]
+	stack -> arr[(stack -> top)--];
 }

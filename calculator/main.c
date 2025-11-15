@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <string.h>
 #include "main.h"
 #include "stack.h"
@@ -6,18 +5,14 @@
 
 int main(void) {
 	
-	char expression[];
-	int len = strlen(expression)
+	char expression[MAX_SIZE];
 	Stack stack;
-	stack
-	init();
+	init(&stack);
+	int isCal = 0;
 	
 	printf("Enter Expression: \n");
 	scanf("%s", expression);
-	
-	for(int i = 0; 0 < len; i++) {
-		push(&stack, expression[i]);
-	}
+	int len = strlen(expression);
 	
 	return 0;
 }
