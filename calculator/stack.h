@@ -21,6 +21,10 @@ void push(Stack *stack, int value) {
 	stack -> arr[++(stack -> top)] = value;
 }
 
-void pop(Stack *stack) {
+int pop(Stack *stack) {
 	stack -> arr[(stack -> top)--];
+}
+
+int peek(Stack *stack) {
+	return stack -> top;
 }
