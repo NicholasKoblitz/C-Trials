@@ -1,4 +1,5 @@
 #pragma once
+#include<stdio.h>
 
 
 float add(float a, float b) {
@@ -32,3 +33,4 @@ int logt(int logNum, int byNum) {
 	}
 	return count;
 }
+
