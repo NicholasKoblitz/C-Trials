@@ -44,7 +44,7 @@ float calculate(void) {
 	float total;
 
 	printf("Enter the first number: ");
-	scanf("%d", &num1);
+	scanf("%f", &num1);
 
 	// Put a space before %c to get the \n that is entered after the number
 	// of the previous scanf.
@@ -52,7 +52,7 @@ float calculate(void) {
 	scanf(" %c", &op);
 
 	printf("\nEnter the second number: ");
-	scanf("%d", &num2);
+	scanf("%f", &num2);
 
 	switch(op) {
 		case '+':

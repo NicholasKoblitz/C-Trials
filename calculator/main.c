@@ -14,6 +14,7 @@ int main(void) {
 
 	while(isCal) {
 		float total = calculate();
+		printf(" %.2f\n", total);
 
 		if(total == __FLT_MAX__) {
 			exit(1);
