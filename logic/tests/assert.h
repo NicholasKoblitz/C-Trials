@@ -2,18 +2,18 @@
 
 int assert_eq(int a, int b) {
     if(a == b) {
-        return 0;
+        return "true";
     }
     else {
-        return -1;
+        return "false";
     }
 }
 
 int assert_ne(int a, int b) {
     if(a != b) {
-        return 0;
+        return "true";
     }
     else {
-        return -1;
+        return "false";
     }
 }
