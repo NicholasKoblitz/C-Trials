@@ -45,3 +45,17 @@ int l_or(int a, int b) {
 		return 1;
 	}
 }
+
+int l_nand(int a, int b) {
+	if(invalid_input(a,b)) {
+		return -1;
+	}
+	return inverter(l_and(a,b))()
+}
+
+int l_nor(int a, int b) {
+	if(invalid_input(a,b)) {
+		return -1;
+	}
+	return inverter(l_or(a,b));
+}
