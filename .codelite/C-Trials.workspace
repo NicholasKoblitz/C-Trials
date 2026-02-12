@@ -1,0 +1,23 @@
+{
+	"selected_config":	"Debug",
+	"configs":	[{
+			"name":	"Debug",
+			"flags":	0,
+			"compile_flags":	[],
+			"executable":	"",
+			"arguments":	"",
+			"environment":	"",
+			"compiler":	"/usr/sbin/gcc",
+			"remoteFolder":	"",
+			"remoteAccount":	"",
+			"workingDirectory":	"",
+			"debuggerPath":	"",
+			"debuggerCommands":	"",
+			"debuggerRemoteEnabled":	false,
+			"debuggerRemoteExtended":	true,
+			"debuggerRemoteHost":	"localhost",
+			"debuggerRemotePort":	"2345",
+			"debuggerRemoteCommands":	"",
+			"last_executables":	[]
+		}]
+}
